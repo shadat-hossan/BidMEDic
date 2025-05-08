@@ -957,3 +957,30 @@ ul.nav > li > a.active{
     opacity: 0.8;
     color: #fff;
 }
+
+
+
+#player {
+    max-width: 1600px;
+    margin: 0 auto;
+    border-radius: 30px;
+    /* background-color: #1151D3; */
+    /* border: 2px solid #2CB5EB; */
+    box-shadow: 0px 0px 10px #d4d4d4;
+  }
+
+  .plyr__control--overlaid {
+    background-color: #006ff4;
+  }
+
+  .plyr--video .plyr__control.plyr__tab-focus,
+  .plyr--video .plyr__control:hover,
+  .plyr--video .plyr__control[aria-expanded="true"] {
+    background: #006ff4;
+  }
+
+  .plyr--full-ui input[type="range"] {
+    color: #006ff4;
+  }
+
+  

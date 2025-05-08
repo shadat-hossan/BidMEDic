@@ -41,6 +41,12 @@
     <link rel="stylesheet" href="css/responsive.css" />
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.4.6/plyr.css" />
   </head>
   <body data-spy="scroll" data-target="#navmenu" data-offset="70">
     <!--[if lt IE 8]>
@@ -158,6 +164,35 @@
         </div>
       </div>
     </section>
+
+    <section class="promo-section padding">
+      <div class="container">
+        <div class="section-heading text-center mb-60">
+          <h2 class="section-title">BidMEDic Quick Intro</h2>
+          <p class="section-description">
+            Watch this quick intro video to discover BidMEDic’s innovative
+            features for bidding, appointments, <br />
+            and seamless healthcare and e-commerce.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-12">
+            <div class="video-container">
+              <div class="plyr__video-embed" id="player">
+                <iframe
+                  src="https://www.youtube.com/embed/kqzTTJ9FQck?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                  allowfullscreen
+                  allowtransparency
+                  allow="autoplay"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
     <!-- Promo Section -->
 
     <section class="content-section bg-grey padding">
@@ -561,5 +596,13 @@
     <script src="js/vendor/wow.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.plyr.io/3.4.6/plyr.js"></script>
+    <script>
+      const player = new Plyr("#player", {
+        autoplay: true,
+        muted: false,
+      });
+    </script>
   </body>
 </html>
